@@ -1,0 +1,27 @@
+{
+  "name": "flipr-fsa",
+  "version": "1.0.0",
+  "description": "A Full Stack Web App for Flipr Hackathon.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "clear && nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MVJ-Boys/flipr-FSA.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MVJ-Boys/flipr-FSA/issues"
+  },
+  "homepage": "https://github.com/MVJ-Boys/flipr-FSA#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}

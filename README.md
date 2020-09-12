@@ -4,7 +4,7 @@ A Full Stack Web App for Flipr Hackathon.
 
 ## What does it do?
 
-I don't know yet.
+A COVID19 WebApp.
 
 ## To start the Server Development Mode
 

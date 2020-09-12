@@ -6,7 +6,7 @@ const hbs = require("hbs");
 const app = express();
 const port = process.env.PORT || 3000;
 
-//configuretions
+//configurations
 const publicFolder = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
 const partials = path.join(__dirname, "../templates/partials");
@@ -20,7 +20,7 @@ hbs.registerPartials(partials);
 
 //home page route handler
 app.get("/", (req, res) => {
-  res.render("index");
+	res.render("index");
 });
 
 //about page route handler
@@ -28,7 +28,7 @@ app.get("/about", (req, res) => res.render("about"));
 
 //404 error code catcher
 app.get("*", (req, res) => {
-  res.send("Testing 404");
+	res.send("Testing 404");
 });
 
 app.listen(port, () => [console.log("Server is setup on port " + port)]);

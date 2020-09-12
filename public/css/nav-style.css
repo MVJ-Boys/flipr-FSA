@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap');
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #179DBE;
+    color: white;
+}
+
+#nav-links{
+    list-style: none;
+}
+
+#nav-links li{
+    top: 10%;
+    position: relative;
+    display: inline-block;
+    padding: 17px 20px;
+    margin: 0 20px;
+    height: 80%;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+
+#logo{
+    font-family: 'Kufam', cursive;
+    margin: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+
+/*Animations*/
+#logo:hover{
+    color: #FE4E7A;
+}
+
+#nav-links li:hover{
+    color: #e32e58;
+    background-color: #ffffff;
+}

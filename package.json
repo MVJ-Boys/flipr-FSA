@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "clear && nodemon src/index.js"
+    "predev": "clear && echo Installing Dependencies...... && npm install",
+    "dev": "clear && set NODE_ENV=development && nodemon src/index.js -e js,hbs"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "prettier": "^2.1.1"
+    "mongoose": "^5.10.5",
+    "prettier": "^2.1.1",
+    "request": "^2.88.2"
   }
 }

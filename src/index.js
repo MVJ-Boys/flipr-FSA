@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
+require('./db/mongodb');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -20,15 +21,19 @@ hbs.registerPartials(partials);
 
 //home page route handler
 app.get("/", (req, res) => {
-	res.render("index");
+    res.render("index",{
+        title: "Home Page"
+    });
 });
 
 //about page route handler
-app.get("/about", (req, res) => res.render("about"));
+app.get("/contact", (req, res) => res.render("contact",{
+    title: "Contact Page"
+}));
 
 //404 error code catcher
 app.get("*", (req, res) => {
-	res.send("Testing 404");
+    res.send("Testing 404");
 });
 
 app.listen(port, () => [console.log("Server is setup on port " + port)]);

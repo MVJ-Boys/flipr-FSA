@@ -1,41 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap");
 
-nav{
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: #179DBE;
-    color: white;
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #179dbe;
+  color: white;
 }
 
-#nav-links{
-    list-style: none;
+#nav-links {
+  list-style: none;
 }
 
-#nav-links li{
-    top: 10%;
-    position: relative;
-    display: inline-block;
-    padding: 17px 20px;
-    margin: 0 20px;
-    height: 80%;
-    transition: all 0.3s ease 0s;
-    border-radius: 10px;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-#logo{
-    font-family: 'Kufam', cursive;
-    margin: 20px;
-    transition: all 0.3s ease 0s;
+#nav-links li {
+  color: white;
+  top: 10%;
+  position: relative;
+  display: inline-block;
+  padding: 17px 20px;
+  margin: 0 20px;
+  height: 80%;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
 }
 
+#logo h1 {
+  font-family: "Kufam", cursive;
+  margin: 20px;
+}
+
+#logo h1 a {
+  transition: all 0.3s ease 0s;
+}
+
+#drop-btn {
+  cursor: pointer;
+}
+
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #179dbe;
+  position: absolute;
+  height: 70px;
+  width: 150px;
+  top: 9vh;
+  opacity: 0;
+  transform: translateX(250px);
+}
+
+.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /*Animations*/
-#logo:hover{
-    color: #FE4E7A;
+#logo h1 a:hover {
+  color: #fe4e7a;
 }
 
-#nav-links li:hover{
-    color: #e32e58;
-    background-color: #ffffff;
+#nav-links li:hover {
+  background-color: #ffffff;
+}
+
+#nav-links li:hover a {
+  color: #e32e58;
 }

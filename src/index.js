@@ -31,6 +31,22 @@ app.get("/contact", (req, res) => res.render("contact",{
     title: "Contact Page"
 }));
 
+//notification page router handler
+app.get('/notification', (req,res)=> res.render('notification',{
+    title: "Notification Page"
+}));
+
+//dashboard page router handler
+app.get('/dashboard', (req,res)=> res.render('dashboard',{
+    title: "Dashboard"
+}));
+
+//ratio page router handler
+app.get('/ratio', (req,res)=> res.render('ratio',{
+    title: "Ratio"
+}));
+
+
 //404 error code catcher
 app.get("*", (req, res) => {
     res.send("Testing 404");

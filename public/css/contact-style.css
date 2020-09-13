@@ -1,18 +1,4 @@
-#contact{
-    position: relative;
-    height: 100%;
-}
-
-table{
-    height: 100%;
-    width: 100%;
-    margin: 50px;
-}
-
-th{
-    font-size: 30px;
-}
-
-td{
-    text-align: center;
+#contact {
+  position: relative;
+  height: 100%;
 }

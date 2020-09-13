@@ -12,7 +12,7 @@ nav {
   list-style: none;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: white;
 }

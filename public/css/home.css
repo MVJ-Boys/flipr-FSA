@@ -49,3 +49,20 @@ footer {
   font-size: small;
   text-align: center;
 }
+
+table {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+th {
+  min-width: 200px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}

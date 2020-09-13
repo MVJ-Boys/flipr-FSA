@@ -1,4 +1,10 @@
-#notification{
-    position: relative;
-    height: 100%;
+#notification {
+  position: relative;
+  height: 100%;
+}
+table tr a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
 }

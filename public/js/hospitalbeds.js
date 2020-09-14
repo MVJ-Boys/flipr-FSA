@@ -18,28 +18,38 @@ fetch("https://api.rootnet.in/covid19-in/hospitals/beds")
         const td4 = document.createElement("td");
         const td5 = document.createElement("td");
         const td6 = document.createElement("td");
-          const ruralHospitals = document.createTextNode(regionals.ruralHospitals);
-          const ruralBeds = document.createTextNode(regionals.ruralBeds);
-          const urbanHospitals = document.createTextNode(regionals.urbanHospitals);
-          const urbanBeds = document.createTextNode(regionals.urbanBeds);
-          const totalHospitals = document.createTextNode(regionals.totalHospitals);
-          const totalBeds = document.createTextNode(regionals.totalBeds);
+        const td7 = document.createElement("td");
 
-          td1.appendChild(ruralHospitals);
-          td2.appendChild(ruralBeds);
-          td3.appendChild(urbanHospitals);
-          td4.appendChild(urbanBeds);
-          td5.appendChild(totalHospitals);
-          td6.appendChild(totalBeds);
-          
-          tr.appendChild(td1);
-          tr.appendChild(td2);
-          tr.appendChild(td3);
-          tr.appendChild(td4);
-          tr.appendChild(td5);
-          tr.appendChild(td6);
-          table.appendChild(tr);
-        
+        const stateName = document.createTextNode(regionals.state);
+        const ruralHospitals = document.createTextNode(
+          regionals.ruralHospitals
+        );
+        const ruralBeds = document.createTextNode(regionals.ruralBeds);
+        const urbanHospitals = document.createTextNode(
+          regionals.urbanHospitals
+        );
+        const urbanBeds = document.createTextNode(regionals.urbanBeds);
+        const totalHospitals = document.createTextNode(
+          regionals.totalHospitals
+        );
+        const totalBeds = document.createTextNode(regionals.totalBeds);
+
+        td1.appendChild(stateName);
+        td2.appendChild(ruralHospitals);
+        td3.appendChild(ruralBeds);
+        td4.appendChild(urbanHospitals);
+        td5.appendChild(urbanBeds);
+        td6.appendChild(totalHospitals);
+        td7.appendChild(totalBeds);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        tr.appendChild(td6);
+        tr.appendChild(td7);
+        table.appendChild(tr);
       });
     }
   });

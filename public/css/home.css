@@ -17,7 +17,6 @@ body {
 
 main {
   display: flex;
-  height: 87vh;
   position: relative;
   justify-content: space-evenly;
   align-items: center;
@@ -58,8 +57,8 @@ table {
 }
 
 th {
-  min-width: 200px;
-  font-size: 30px;
+  min-width: 150px;
+  font-size: 20px;
   border: 1px solid black;
 }
 

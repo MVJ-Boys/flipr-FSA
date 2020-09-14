@@ -1,6 +1,7 @@
 #ratio {
   height: 86vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -8,4 +9,12 @@
 #chart {
   height: 300px;
   width: 300px;
+}
+
+#chart h1 {
+  color: #179dbe;
+}
+
+#chart div {
+  border: 2px black;
 }

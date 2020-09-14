@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-  /* border: 0; */
   margin: 0;
   box-sizing: border-box;
   list-style: none;
@@ -22,6 +21,10 @@ main {
   align-items: center;
 }
 
+#home {
+  height: 86vh;
+}
+
 #hero-text {
   height: 300px;
   display: flex;
@@ -30,12 +33,21 @@ main {
   align-items: center;
 }
 
-#hero-text h1 {
-  font-size: 50px;
+#hero-text h1,
+h2 {
+  margin: 15px;
+  color: #179dbe;
+  font-size: 40px;
   font-family: "Kufam", cursive;
 }
 
+h4 {
+  color: #ff4f7b;
+  font-size: 20px;
+}
+
 #hero-text p {
+  margin: 10px;
   font-size: 18px;
 }
 

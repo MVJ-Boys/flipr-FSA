@@ -6,19 +6,29 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/nav-style.css">
+    <link rel="stylesheet" href="/css/dashboard-style.css">
 </head>
 
 <body>
     {{>header}}
     <main id="dashboard">
-        <ul id="nav-links" align="center">
-            <a href="/dashboard/hospitalbeds">
-                <h1>Hospitals and beds</h1>
-            </a>
-
-            <a href="/dashboard/medicalbeds">
-                <h1>Medical Colleges and beds</h1>
-            </a>
+        <ul>
+            <div>
+                <a href="/dashboard/hospitalbeds">
+                    <h1>Hospitals and beds</h1>
+                </a>
+                <p>
+                    Displays the details of the Hospital beds provided by the Government.
+                </p>
+            </div>
+            <div>
+                <a href="/dashboard/medicalbeds">
+                    <h1>Medical Colleges and beds</h1>
+                </a>
+                <p>
+                    Displays the details of the Medical College beds funded by the society.
+                </p>
+            </div>
         </ul>
     </main>
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap");
 
 nav {
-  height: 10vh;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   background-color: #179dbe;

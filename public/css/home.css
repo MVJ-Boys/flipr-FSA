@@ -35,19 +35,20 @@ main {
 
 #hero-text h1,
 h2 {
-  margin: 15px;
+  margin: 0 15px 0;
   color: #179dbe;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Kufam", cursive;
 }
 
 h4 {
+  margin: 0 30px;
   color: #ff4f7b;
   font-size: 20px;
 }
 
 #hero-text p {
-  margin: 10px;
+  margin: 0 20px;
   font-size: 18px;
 }
 

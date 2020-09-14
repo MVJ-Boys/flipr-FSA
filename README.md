@@ -21,3 +21,10 @@ Run "npm run dev" in the terminal.
 > Public: This folder will contain all the CSS, images and Client side javascript files.
 >
 > Src; This folder is the Big Brain in the whole project. It contains the Backend JavaScript files , server files and the main logic behind the App.
+
+
+### API Link
+
+> /patients
+>
+>This is the link to the REST API

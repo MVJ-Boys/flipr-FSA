@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-  border: 0;
+  /* border: 0; */
   margin: 0;
   box-sizing: border-box;
   list-style: none;
@@ -36,7 +36,7 @@ main {
 }
 
 #hero-text p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #hero-img {

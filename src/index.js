@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
+const Patient = require("./models/patient");
 require("./db/mongodb");
 
 const app = express();
@@ -15,6 +16,7 @@ const partials = path.join(__dirname, "../templates/partials");
 app.use(express.static(publicFolder));
 
 //hbs config's
+app.use(express.json());
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
 hbs.registerPartials(partials);
@@ -47,12 +49,14 @@ app.get("/dashboard", (req, res) =>
   })
 );
 
+//dashboard sub-routes
 app.get("/dashboard/hospitalbeds", (req, res) => {
   res.render("hospitalbeds", {
     title: "Hospital Beds",
   });
 });
 
+//dashboard sub-routes
 app.get("/dashboard/medicalbeds", (req, res) => {
   res.render("medicalbeds", {
     title: "Medical Beds",
@@ -66,9 +70,35 @@ app.get("/ratio", (req, res) =>
   })
 );
 
+// ************************************************************
+//API
+app.get("/patients", async (req, res) => {
+  try {
+    const patients = await Patient.find({});
+    const arr = [];
+    for (const item of patients) {
+      arr.push({
+        patientId: item.patientId,
+        reportedOn: item.reportedOn,
+        ageEstimate: item.ageEstimate,
+        gender: item.gender,
+        state: item.state,
+        status: item.status,
+      });
+    }
+    res.send(arr);
+  } catch (e) {
+    res.status(500).send({
+      error: "Error fetching from the dataBase",
+    });
+  }
+});
+
 //404 error code catcher
 app.get("*", (req, res) => {
   res.send("Testing 404");
 });
 
-app.listen(port, () => [console.log("Server is setup on port " + port)]);
+app.listen(port, () => {
+  console.log("Server is setup on port " + port);
+});

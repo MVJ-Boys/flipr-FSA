@@ -61,9 +61,6 @@ nav a {
 }
 
 /*Animations*/
-#logo h1 a:hover {
-  color: #fe4e7a;
-}
 
 #nav-links li:hover {
   background-color: #ffffff;
@@ -71,4 +68,11 @@ nav a {
 
 #nav-links li:hover a {
   color: #e32e58;
+}
+
+#logo img {
+  padding: 5px;
+  margin: 0 50px;
+  height: 10vh;
+  width: 110px;
 }

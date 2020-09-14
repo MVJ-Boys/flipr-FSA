@@ -1,0 +1,11 @@
+#ratio {
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chart {
+  height: 300px;
+  width: 300px;
+}

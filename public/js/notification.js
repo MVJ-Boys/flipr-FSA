@@ -39,7 +39,8 @@ fetch("https://api.rootnet.in/covid19-in/notifications")
           td2.appendChild(title);
           td3.appendChild(a);
           a.appendChild(document.createTextNode(linkText + "...."));
-          a.setAttribute("href", link);
+          a.setAttribute("href", link.textContent);
+          a.setAttribute("target", "_");
           tr.appendChild(td1);
           tr.appendChild(td2);
           tr.appendChild(a);

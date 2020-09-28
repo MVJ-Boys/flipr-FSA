@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "build": "node src/index.js",
     "predev": "(cls || clear) && echo Installing Dependencies...... && npm install",
     "dev": "(cls || clear) && set NODE_ENV=development && nodemon src/index.js -e js,hbs"
   },
